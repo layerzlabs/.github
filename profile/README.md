@@ -2,7 +2,7 @@
 
 Open integration surfaces for [Layerz](https://layerz.cc) — structured financial modeling infrastructure.
 
-The repos here are not the product. They are **entry points**: open standards, tools, and plugins that let AI agents and finance practitioners work with structured financial models — without going through the web interface.
+The repos here are not the product. They are **entry points**: open standards, tools, plugins, and recipes that let AI agents and finance practitioners work with structured financial models — without going through the web interface.
 
 ---
 
@@ -52,6 +52,18 @@ claude plugin marketplace add layerzlabs/layerz-mcp
 # OpenAI Codex CLI
 codex mcp add layerz --url https://app.layerz.cc/mcp && codex mcp login layerz
 ```
+
+---
+
+### [finance-cookbook](https://github.com/layerzlabs/finance-cookbook)
+
+Curated recipes for doing financial work with AI agents: prompts and patterns for FP&A, modeling and reporting, battle-tested in the field.
+
+**We share the recipe, not the black box.** The cookbook ships prompts you can read, audit and own, never installable skills. Two kinds: *working prompts* that do the task in-session, and *builder prompts* that have Claude forge or harden your own skill, script or `FINANCE.md`.
+
+Each recipe names where a prompt stops being enough, and points back to `finance-md` (structure) and `layerz-mcp` (persistence) when it does.
+
+→ [Recipes · Template · Contributing](https://github.com/layerzlabs/finance-cookbook)
 
 ---
 
