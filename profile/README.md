@@ -8,6 +8,18 @@ The repos here are not the product. They are **entry points**: open standards, t
 
 ## Repos
 
+### [finance-cookbook](https://github.com/layerzlabs/finance-cookbook)
+
+Curated recipes for doing financial work with AI agents: prompts and patterns for FP&A, modeling and reporting, battle-tested in the field. The lowest-friction entry point: copy a prompt, use it now.
+
+**We share the recipe, not the black box.** The cookbook ships prompts you can read, audit and own, never installable skills. Two kinds: *working prompts* that do the task in-session, and *builder prompts* that have Claude forge or harden your own skill, script or `FINANCE.md`.
+
+Each recipe names where a prompt stops being enough, and points back to `finance-md` (structure) and `layerz-mcp` (persistence) when it does.
+
+→ [Recipes · Template · Contributing](https://github.com/layerzlabs/finance-cookbook)
+
+---
+
 ### [finance-md](https://github.com/layerzlabs/finance-md)
 
 The standard for encoding financial conventions as machine-readable files.
@@ -52,18 +64,6 @@ claude plugin marketplace add layerzlabs/layerz-mcp
 # OpenAI Codex CLI
 codex mcp add layerz --url https://app.layerz.cc/mcp && codex mcp login layerz
 ```
-
----
-
-### [finance-cookbook](https://github.com/layerzlabs/finance-cookbook)
-
-Curated recipes for doing financial work with AI agents: prompts and patterns for FP&A, modeling and reporting, battle-tested in the field.
-
-**We share the recipe, not the black box.** The cookbook ships prompts you can read, audit and own, never installable skills. Two kinds: *working prompts* that do the task in-session, and *builder prompts* that have Claude forge or harden your own skill, script or `FINANCE.md`.
-
-Each recipe names where a prompt stops being enough, and points back to `finance-md` (structure) and `layerz-mcp` (persistence) when it does.
-
-→ [Recipes · Template · Contributing](https://github.com/layerzlabs/finance-cookbook)
 
 ---
 
