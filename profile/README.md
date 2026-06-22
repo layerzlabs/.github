@@ -50,20 +50,35 @@ rate for BS, average for P&L.
 
 ---
 
-### [layerz-mcp](https://github.com/layerzlabs/layerz-mcp)
+### [Layerz MCP](https://app.layerz.cc/for-agents)
 
-The Layerz MCP plugin for creating and editing financial models from the terminal — distributed across the major MCP clients (Claude Code, OpenAI Codex CLI, Claude Desktop, MCP Inspector).
+The Layerz MCP server for creating and editing financial models from the terminal — a remote endpoint that works with any MCP client (Claude Code, OpenAI Codex CLI, Claude Desktop, MCP Inspector).
 
-One install per client. Once registered, your agent gets financial modeling expertise and the full Layerz API surface — so it can build a P&L model autonomously via the MCP tool calls.
+One connection per client. Once registered, your agent gets financial modeling expertise and the full Layerz API surface — so it can build a P&L model autonomously via the MCP tool calls.
 
 ```bash
 # Claude Code
-claude plugin marketplace add layerzlabs/layerz-mcp
-# then in Claude Code: /plugin install layerz
+claude mcp add --transport http layerz https://app.layerz.cc/mcp
 
 # OpenAI Codex CLI
 codex mcp add layerz --url https://app.layerz.cc/mcp && codex mcp login layerz
 ```
+
+---
+
+### [slides-for-claude](https://github.com/layerzlabs/slides-for-claude)
+
+A Claude Code skill that turns a YAML + CSS spec into a self-contained, navigable HTML presentation — pitch decks, board updates, investor reports — via a zero-dependency Ruby renderer. No JS in the output, no build step.
+
+Clone, launch Claude Code in the repo (the skill is auto-discovered), then describe your deck:
+
+```bash
+git clone https://github.com/layerzlabs/slides-for-claude.git
+cd slides-for-claude && claude
+# then: /layerz-slides build a Series A pitch for Acme Vision
+```
+
+→ [Skill · Templates · Examples](https://github.com/layerzlabs/slides-for-claude)
 
 ---
 
